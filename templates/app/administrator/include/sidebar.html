@@ -1,0 +1,70 @@
+{% load static %}
+<!-- sidebar  -->
+<div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel">
+  <div class="w-100 sidebar position-relative">
+    <div class="mb-4 py-4 d-flex justify-content-center align-items-center sticky-top background-sidebar">
+      <img src="../wave-html/assets/images/logo-full.png" alt="" />
+      <button type="button"
+        class="d-lg-none btn-close p-2 rounded-circle cross-button text-reset position-absolute-cross d-flex justify-content-center align-items-center"
+        data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="../wave-html/assets/icons/cross-chats.svg" alt="" />
+      </button>
+    </div>
+    <div class="px-4 d-flex flex-column gap-3">
+      <div>
+        <h1 class="text-white mb-2 fw-bold text-center bg-warning p-2 rounded-2">GIC</h1>
+      </div>
+      <!-- dashboard button  -->
+      <div class="">
+        <a href="{% url 'app:dashboard' %}"
+          class="btn text-white d-flex w-100 py-2 px-2 px-0 align-items-center gap-3 {% if request.resolver_match.url_name == 'dashboard' %} active-class {% else %} {% endif %}" type="button"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="{% static 'wave-html/assets/icons/grid-sidebar.svg' %}" alt="" />
+          <p class="m-0 sidebar-media">Dashboard</p>
+        </a>
+      </div>
+      <!-- Profile button  -->
+      <div class="accordion" id="accordionExample2">
+        <div class="accordion-item accordion-sidebar">
+           <a href="{% url 'app:profile' %}" class="text-light">
+          <h2 class="accordion-header accordion-sidebar" id="headingthree">
+            <button
+              class="btn accordion-button accordion-button-dash accordion-sidebar collapsed shadow-none text-white px-2 py-2 d-flex justify-content-between {% if request.resolver_match.url_name == 'profile' %} active-class {% else %} {% endif %}"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false"
+              aria-controls="collapsethree">
+              <div>
+                <img src="../wave-html/assets/icons/user-sidebar.svg" alt="" class="me-2" />
+               <span>Profile</span>
+              </div>
+
+            </button>
+          </h2>
+           </a>
+        </div>
+      </div>
+
+      <!-- process tracking button  -->
+      <div class="accordion" id="accordionExample2">
+        <div class="accordion-item accordion-sidebar">
+          <a href="{% url 'app:upload_documents' %}" class="text-light">
+          <h2 class="accordion-header accordion-sidebar" id="headingthree">
+            <button
+              class="btn accordion-button accordion-button-dash accordion-sidebar collapsed shadow-none text-white px-2 py-2 d-flex justify-content-between {% if request.resolver_match.url_name == 'upload_documents' %} active-class {% else %} {% endif %}"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false"
+              aria-controls="collapsethree">
+              <div>
+                <img src="../wave-html/assets/icons/user-sidebar.svg" alt="" class="me-2" />
+                <span>Upload Documents</span>
+              </div>
+
+            </button>
+          </h2>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- sidebar end   -->

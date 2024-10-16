@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name=”keywords” content="">
+    <meta name="description"
+        content="At FFA, we take pride in being recognized as one of the top-rated immigration consultancy firms in Dubai, UAE. Our commitment is to offer exceptional services at competitive prices" />
+    <meta name="author" content="" />
+    <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>{% block title %} GIC {% endblock title %} </title>
+    <link rel=“canonical” href='' />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <!-- animate -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %}" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}" />
+    <!-- themify -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/themify-icons.css' %}" />
+    <!-- flaticon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/flaticon.css' %}" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="{% static 'assets/revolution/css/rs6.css' %}">
+    <!-- prettyphoto -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/prettyPhoto.css' %}">
+    <!-- shortcodes -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes.css' %}" />
+    <!-- main -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}" />
+    <!-- main -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/megamenu.css' %}" />
+    <!-- responsive -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}" />
+    <!-- cdn for flags   -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet"/>
+
+    <style>
+        /* @media only screen and (min-device-width: 668px){
+    #slider-1-slide-1-layer-2{
+        font-size: 97% !important
+    }
+    #slider-1-slide-1-layer-1{
+        font-size: 76% !important  
+    }
+} */
+    </style>
+</head>
+
+<body class="w-100">
+    {% include "app/assets/header.html" %}
+
+    {% block content %}
+
+
+    {% endblock content %}
+
+    {% include "app/assets/footer.html" %}
+
+
+
+    <!-- Javascript -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/tether.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-validate.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/numinate.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-isotope.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <!-- Revolution Slider -->
+    <script src="{% static 'assets/revolution/js/slider.js' %}"></script>
+    <script src="{% static 'assets/revolution/js/revolution.tools.min.js' %}"></script>
+    <script src="{% static 'assets/revolution/js/rs6.min.js' %}"></script>
+    <!-- Javascript end-->
+</body>
+
+</html>

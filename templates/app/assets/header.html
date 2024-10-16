@@ -1,0 +1,172 @@
+{% load static %}
+{% load i18n %}
+
+
+<div class="page">
+    <!--header start-->
+    <header id="masthead" class="header cmt-header-style-01">
+        <!-- top_bar -->
+        <div class="top_bar cmt-textcolor-black clearfix" style="background-color:#dd901e;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <div class="top_bar_contact_item">
+                                <div class="top_bar_icon"><i class="ti ti-alarm-clock"></i></div><span style="color:rgba(90, 11, 77);">{% trans "Monday - Saturday 10.00 A M - 06.00 P M" %}</span>
+                            </div>
+                            <div class="top_bar_contact_item">
+                                <div class="top_bar_icon"></div><span style="color:rgba(90, 11, 77); font-size:1rem; text-align:center; font-weight:bold;">Welcome {{user.username|upper}}!</span>
+                            </div>
+                            <div class="top_bar_contact_item ml-auto"  >
+                                <div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a
+                                    href="mailto:canadianmigrant89@gmail.com" >canadianmigrant89@gmail.com</a>
+                            </div>
+                            <div class="cmt-bg cmt-col-bgcolor-yes cmt-right-span cmt-bgcolor-skincolor pl-20">
+                                <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                                <div class="layer-content">
+                                    <div class="top_bar_contact_item">
+                                        <div class="top_bar_icon"><i class="fa fa-phone"></i></div><a
+                                            href="tel:+1(510) 546 8996"><a href="tel:+1(510) 546 8996">+1(510) 546 8996</a></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- top_bar end-->
+
+        <!-- site-header-menu -->
+        <div id="site-header-menu" class="site-header-menu cmt-bgcolor-white">
+            <div class="site-header-menu-inner cmt-stickable-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--site-navigation -->
+                            <div class="site-navigation d-flex flex-row align-items-center justify-content-between">
+                                <!-- site-branding -->
+                                <div class="site-branding ">
+                                    <a class="home-link" href="/" title="Tripzia" rel="home">
+<!--                                        <img id="logo-img" class="img-center"-->
+<!--                                            src="{% static 'assets/images/logo-img.png' %}" alt="logo-img">-->
+                                        <h3 class="" style="font-weight:bolder; color:#ffa500;">GIC</h3>
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!-- widget-info -->
+                                <!-- <div class="widget_info mr-auto">
+                                <div>Visa & Immigration Consultants</div>
+                            </div> -->
+                                <div class="d-flex flex-row">
+                                    <div class="btn-show-menu-mobile menubar menubar--squeeze" id="menubar--squeeze">
+                                        <span class="menubar-box">
+                                            <span class="menubar-inner"></span>
+                                            <span class="menubar-inner"></span>
+                                            <span class="menubar-inner"></span>
+                                        </span>
+                                    </div>
+                                    <!-- menu -->
+                                    <nav class="main-menu menu-mobile">
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="/">{% trans 'Home' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'app:about_us' %}">{% trans 'About Us' %}</a>
+                                            </li>
+                                            <li>
+                                                {% if user.is_authenticated %}
+                                                <a href="{% url 'app:assessment_form' %}">{% trans 'Assessment form' %}</a>
+                                                {% else %}
+                                                <a href="{% url 'core:login' %}">{% trans 'Login' %}</a>
+                                                {% endif %}
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'app:contact' %}">{% trans 'Contact Us' %}</a>
+                                            </li>
+                                            <li class="">
+                                              <ul class="nav-item dropdown header-profile">
+                                                    <form action="{% url 'set_language' %}" method="post">
+                                                        {% csrf_token %}
+                                                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:"3:" }}">
+
+                                                            <select class="form-select language_dropdown_list" name="language" onchange="this.form.submit()" id="language">
+                                                            {% get_current_language as LANGUAGE_CODE %}
+                                                            {% get_available_languages as LANGUAGES %}
+                                                            {% get_language_info_list for LANGUAGES as languages %}
+
+                                                            {% for language in languages %}
+                                                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                                                    <!-- Show the flag and the local language name -->
+                                                                    <span class="fi fi-{{ language.code|slice:":2" }}"></span>
+                                                                    {{ language.name_local }}
+                                                                </option>
+                                                            {% endfor %}
+                                                        </select>
+                                                    </form>
+                                              </ul>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'app:payment_proof' %}">{% trans 'Payment Proof' %}</a>
+                                            </li>
+                                            <li>
+                                                {% if user.is_authenticated %}
+                                                <a href="{% url 'core:logout' %}">{% trans 'Logout' %}</a>
+                                                {% else %}
+                                                {% endif %}
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div><!-- site-navigation end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- site-header-menu end-->
+    </header>
+    <!--header end-->
+
+
+    <nav class="styled-mobile-menu" id="menu" style="display: none;">
+    <ul class="">
+        <li ><a href="/">{% trans 'Home' %}</a></li>
+        <li><a href="{% url 'app:about_us' %}">{% trans 'About Us' %}</a></li>
+        <li>
+            {% if user.is_authenticated %}
+            <a href="{% url 'app:assessment_form' %}">{% trans 'Assessment form' %}</a>
+            {% else %}
+            <a href="{% url 'core:login' %}">{% trans 'Login' %}</a>
+            {% endif %}
+        </li>
+        <li><a href="{% url 'app:contact' %}">{% trans 'Contact Us' %}</a></li>
+        <li>
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}">
+                    <select class="form-select language_dropdown_list" name="language" onchange="this.form.submit()" id="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                <span class="fi fi-{{ language.code|slice:':2' }}"></span>
+                                {{ language.name_local }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </form>
+        </li>
+        <li>
+            <a href="{% url 'app:payment_proof' %}">{% trans 'Payment Proof' %}</a>
+        </li>
+        <li>
+            {% if user.is_authenticated %}
+            <a href="{% url 'core:logout' %}">{% trans 'Logout' %}</a>
+            {% endif %}
+        </li>
+    </ul>
+    </nav>
+</div>
+

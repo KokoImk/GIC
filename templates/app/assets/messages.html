@@ -1,0 +1,14 @@
+{% load static %}
+{% load i18n %}
+
+{% if messages %}
+    <div class="container custom_container mt-3">
+        {% for message in messages %}
+            <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %} alert-dismissible fade show" role="alert" style="border-radius:13px;">
+              {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<!--# django-admin compilemessages -l ar-->

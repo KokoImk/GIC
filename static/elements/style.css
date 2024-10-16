@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/**eba800 rgba(90, 11, 77) background-color**/
+* {
+    font-family: poppins;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: #eba800;
+}
+
+.buttons {
+    --bg-opacity: 1;
+    background-color: #eba800;
+    color: #fff;
+    padding: 11px 17px;
+    font-size: .875rem;
+    border-radius: .5rem;
+}
+
+::placeholder {
+    font-size: .857rem;
+}
+
+.navbar {
+    padding: 10px;
+    border-bottom: 2px solid #eba800;
+}
+
+.navbar .nav-logo__,
+.login__ {
+    color: #eba800;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link {}
+
+.navbar .login__ {
+    padding: 11px 17px;
+}
+
+.navbar .register__ {
+    --bg-opacity: 1;
+    background-color: #eba800;
+    color: #fff;
+    padding: 11px 17px;
+    font-size: .875rem;
+    border-radius: .5rem;
+}
+.navbar .register__purple {
+    --bg-opacity: 1;
+    background-color: red;
+    color: #fff;
+    padding: 11px 17px;
+    font-size: .875rem;
+    border-radius: .5rem;
+}
+form input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type='email'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+form input[type='username'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form input[type='checkbox'] {
+    padding: 10px;
+    color:#eba800;
+    margin-right: 10px;
+}
+
+select{
+    width: 100%;
+    color: #8093a8;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: #fff;
+    text-transform: inherit;
+    border: 1px solid rgba(0, 43, 92, 0.08);
+    font-size: 14px;
+    outline: none;
+    line-height: inherit;
+    letter-spacing: 0px;
+}
+}
+
+.card-section{
+    height:90vh;
+    margin-top:30px;
+    padding:20px;
+}
+.card-section img{
+    height:600px;
+    width:600px;
+    object-fit:contain;
+}
+.card-section .row-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width:990px){
+    body{
+        height:50vh;
+    }
+    .card-section .row-section{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .card-section img{
+        display:none;
+    }
+    .card-section form{
+        width:100%;
+    }
+}

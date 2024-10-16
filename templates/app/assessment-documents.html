@@ -1,0 +1,143 @@
+{% extends 'app/assets/admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans "Assessment Form" %} {% endblock title %}
+
+{% block content %}
+<div class="page">
+
+
+        <!--header start-->
+          <!--header start-->
+  <header id="masthead" class="header cmt-header-style-01">
+
+        <!-- page-title -->
+        <div class="cmt-page-title-row contact">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">{% trans 'Assessment Form' %}</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="/">{% trans 'Home' %}</a>
+                                </span>
+                                <span>{% trans 'Assessment Form' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--google_map-->
+        <div id="google_map" class="google_map res-991-mt-30">
+            <div class="map_container" style="height:250px; width:100%;">
+                <div>
+                    {% include 'app/assets/messages.html' %}
+                </div>
+            </div>
+        </div>
+
+
+        <!--- conatact-section -->
+        <section class="cmt-row conatact-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cmt-col-bgcolor-yes cmt-bg cmt-bgcolor-white z-index-2 spacing-7 box-shadow">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="pt-30 pb-30 pl-30 pr-30" style="background: url('{% static 'assets/images/single-img-12.jpg' %}'); height:auto; width:100%; background-size:cover; background-repeat:no-repeat;">
+                                        <div class="mb-20">
+                                            <h4 style="color:#000; font-weight:bold;">{% trans "Assessment Form" %}</h4>
+                                            <p style="background-color: #f5faff; padding:13px; border-radius:10px;">{% trans "This form for Global Immigration Consults is designed to gather essential information from clients seeking visa services. This form helps the company evaluate the client's eligibility for various immigration options, such as work, study, or residency visas. By collecting details about the client's background, qualifications, and specific immigration goals, the form enables the consultants to provide tailored advice and streamline the application process. Overall, it serves as a crucial first step in assisting clients on their journey to successful immigration." %}</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-md-7">
+                                    <div class="pl-30 res-991-pl-0 res-767-mt-30">
+                                        <!-- section title -->
+                                        <div class="section-title with-desc clearfix">
+                                            <div class="title-header">
+                                                <h5>{% trans "Info needed" %}</h5>
+                                                <h2 class="title">{% trans "Upload your" %} <strong>{% trans "Info?" %}</strong></h2>
+                                            </div>
+                                        </div><!-- section title end -->
+                                        <form class="contact_form wrap-form pt-15 clearfix" method="post" novalidate="novalidate">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        {{ form.nationality.label_tag }}
+                                                        <span class="text-input">{{ form.nationality }}</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        {{ form.date_of_birth.label_tag }}
+                                                        <span class="text-input"><input type="date" name="date_of_birth"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        {{ form.passport_number.label_tag }}
+                                                        <span class="text-input">{{ form.passport_number }}</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        {{ form.application_status.label_tag }}
+                                                        {% if user.is_staff %}
+                                                        <span class="text-input">{{ form.application_status }}</span>
+                                                        {% else %}
+                                                        <span class="text-input"><input type="text" name="application_status" value="pending" readonly></span>
+                                                        {% endif %}
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label>
+                                                        {{ form.visa_type.label_tag }}
+                                                        <span class="text-input">{{ form.visa_type }}</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+
+                                            <button class="submit cmt-btn cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100" type="submit" name="submit">{% trans "Upload Documents" %}</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- assessment-section end -->
+
+    </div><!--site-main end-->
+
+
+    <!--back-to-top start-->
+    <a id="totop" href="#top" style="display: none;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
+
+</div>
+
+{% endblock %}

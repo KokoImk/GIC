@@ -1,0 +1,567 @@
+{% extends 'app/assets/admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<!--page start-->
+<div class="page">
+    <!-- START homemainclassicslider REVOLUTION SLIDER 6.1.0 -->
+    <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery">
+        <rs-module id="rev_slider_1_1" data-version="6.1.0">
+            <rs-slides>
+                <rs-slide data-key="rs-1" data-title="Slide1" data-thumb="images/slides/slider-mainbg-001.jpg"
+                        data-anim="ei:d;eo:d;s:d;r:0;t:3dcurtain-vertical;sl:d;">
+                        <img src="{% static './assets/images/slides/photo2.jpg' %}" title="slider-bg-image" width="1920" height="690"
+                            class="rev-slidebg" data-no-retina>
+                        <rs-layer id="slider-1-slide-1-layer-1" data-type="text"
+                            data-xy="xo:50px,20px,15px,10px;yo:230px,230px,119px,78px;"
+                            data-text="w:normal;s:20,20,18,18;l:20,20,18,18;a:left;fw:400;" data-color="#0b0c26"
+                            data-rsp_ch="on" data-padding="t:12,12,10,10;r:30,30,20,15;b:12,12,10,10;l:30,30,20,15;"
+                            data-ford="frame_0;frame_1;frame_2;frame_999;"
+                            data-frame_0="x:100px,82px,62px,38px;sX:0.8;sY:0.8;rY:-20deg;oY:0%;"
+                            data-frame_1="x:50px,41px,31px,19px;sX:1.5;sY:1.5;rY:-10deg;oY:0%;e:power4.in;st:500;sp:500;sR:200;"
+                            data-frame_999="st:w;sp:2000;sR:7500;"
+                            data-frame_2="x:0px;sX:1;sY:1;rY:0deg;oX:50%;oY:0%;oZ:0;tp:600px;e:power4.out;st:1000;sp:500;"
+                            style="z-index:50;background-color:rgba(255,255,255,.88);text-transform:uppercase;">GI global immigration
+                        </rs-layer>
+                        <rs-layer id="slider-1-slide-1-layer-2" data-type="text"
+                            data-xy="xo:50px,20px,15px,10px;yo:285px,285px,169px,127px;"
+                            data-text="w:normal;s:42,42,49,36;l:60,60,50,38;a:left;fw:300;" data-color="#0b0c26"
+                            data-rsp_ch="on" data-padding="t:15,15,14,12;r:30,30,20,20;b:15,15,14,12;l:30,30,20,20;"
+                            data-ford="frame_0;frame_1;frame_2;frame_999;"
+                            data-frame_0="x:100px,82px,62px,38px;sX:0.8;sY:0.8;rY:-10deg;oY:0%;"
+                            data-frame_1="x:50px,41px,31px,19px;sX:1.5;sY:1.5;rY:-5deg;oY:0%;e:power4.in;st:900;sp:500;sR:600;"
+                            data-frame_999="st:w;sp:2000;sR:7100;"
+                            data-frame_2="x:0px;sX:1;sY:1;rY:0deg;oX:50%;oY:0%;oZ:0;tp:600px;e:power4.out;st:1400;sp:500;"
+                            style="z-index:48;background-color:rgba(255,255,255,.88);font-family: 'Roboto', sans-serif; text-transform:uppercase;">{% trans 'Your path to' %}
+                            <strong class="cmt-textcolor-skincolor"> </strong> <strong
+                                class="cmt-textcolor-skincolor">u.s Residency</strong> {% trans 'starts' %} <span class="cmt-textcolor-skincolor">here! </span>  <br>
+
+                        </rs-layer>
+
+                    </rs-slide>
+                <rs-slide data-key="rs-2" data-title="Slide2"
+                    data-thumb="{% static './assets/images/slides/images.jpg' %}"
+                    data-anim="ei:d;eo:d;s:2000ms;r:0;t:3dcurtain-horizontal;sl:d;">
+                    <img src="{% static './assets/images/slides/photo1.jpg' %}" title="slider-bg-image" width="1920" height="690" class="rev-slidebg" data-no-retina>
+                    <rs-layer id="slider-1-slide-2-layer-1" data-type="text"
+                        data-xy="xo:50px,20px,15px,10px;yo:230px,230px,119px,78px;"
+                        data-text="w:normal;s:20,20,18,18;l:20,20,18,18;a:left;fw:400;" data-color="#0b0c26"
+                        data-rsp_ch="on" data-padding="t:12,12,10,10;r:30,30,20,15;b:12,12,10,10;l:30,30,20,15;"
+                        data-ford="frame_0;frame_1;frame_2;frame_999;"
+                        data-frame_0="x:100px,82px,62px,38px;sX:0.8;sY:0.8;rY:-20deg;oY:0%;"
+                        data-frame_1="x:50px,41px,31px,19px;sX:1.5;sY:1.5;rY:-10deg;oY:0%;e:power4.in;st:500;sp:500;sR:200;"
+                        data-frame_999="st:w;sp:2000;sR:7500;"
+                        data-frame_2="x:0px;sX:1;sY:1;rY:0deg;oX:50%;oY:0%;oZ:0;tp:600px;e:power4.out;st:1000;sp:500;"
+                        style="z-index:50;background-color:rgba(255,255,255,.88);text-transform:uppercase;"> {% trans 'Welcome To The Fastest Way' %}
+                    </rs-layer>
+                    <rs-layer id="slider-1-slide-2-layer-2" data-type="text"
+                        data-xy="xo:50px,20px,15px,10px;yo:285px,285px,169px,127px;"
+                        data-text="w:normal;s:49,9,49,36;l:60,60,50,38;a:left;fw:300;" data-color="#0b0c26"
+                        data-rsp_ch="on" data-padding="t:15,15,14,12;r:30,30,20,20;b:15,15,14,12;l:30,30,20,20;"
+                        data-ford="frame_0;frame_1;frame_2;frame_999;"
+                        data-frame_0="x:100px,82px,62px,38px;sX:0.8;sY:0.8;rY:-10deg;oY:0%;"
+                        data-frame_1="x:50px,41px,31px,19px;sX:1.5;sY:1.5;rY:-5deg;oY:0%;e:power4.in;st:900;sp:500;sR:600;"
+                        data-frame_999="st:w;sp:2000;sR:7100;"
+                        data-frame_2="x:0px;sX:1;sY:1;rY:0deg;oX:50%;oY:0%;oZ:0;tp:600px;e:power4.out;st:1400;sp:500;"
+                        style="z-index:48;background-color:rgba(255,255,255,.88);font-family: 'Roboto', sans-serif; text-transform:uppercase;">
+                        <strong class="cmt-textcolor-skincolor"> </strong>{%trans 'Get your free' %} <strong
+                                class="cmt-textcolor-skincolor"> EB-2NIW visa profile </strong>
+                    </rs-layer>
+                    <a id="slider-1-slide-2-layer-3"
+                        class="rs-layer cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-fill cmt-btn-color-white"
+                        href="{% url 'app:contact' %}" target="_self" data-type="button"
+                        data-xy="x:l;xo:50px,20px,15px,10px;y:b,b,b,b;yo:230px,230px,117px,78px;"
+                        data-border="bos:solid;boc:#fff;bow:1px,1px,1px,1px;" data-rsp_ch="on" data-color="#1d2143"
+                        data-text="s:15;a:c;fw:600;" data-frame_0="y:50px;"
+                        data-frame_1="e:power4.out;st:900;sp:500;sR:900;" data-frame_999="st:w;sp:2000;sR:7600;"
+                        data-frame_hover="c:#fff;bow:1px,1px,1px,1px;boc:#0067ed;bgc:#0067ed"
+                        style="z-index:7;text-transform: capitalize;">{% trans 'START NOW!' %}
+                    </a>
+                </rs-slide>
+            </rs-slides>
+            <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+        </rs-module>
+    </rs-module-wrap>
+    <!-- END REVOLUTION SLIDER -->
+    <!--site-main start-->
+    <div class="site-main">
+        <!--features-section-->
+        <section
+            class="cmt-row features-section cmt-bgcolor-grey bg-img1 cmt-bg cmt-bgimage-yes cmt-bg-pattern clearfix">
+            <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section title -->
+                        <div class="section-title style2">
+                            <div class="title-header">
+                                <h5>{% trans 'who we are' %}</h5>
+                                <h2 class="title">{% trans 'Welcome to' %} <strong> GI GLOBAL IMMIGRATION</strong></h2>
+                            </div>
+                            <div class="title-desc">
+                                <p style="text-align: justify;">
+                                    {% trans 'Welcome to GlobalImmigrationConsults – your trusted partner for worldwide immigration and visa services. We specialize in providing expert guidance and tailored solutions for countries like USA, Canada, Australia, Italy, and beyond. With a focus on excellence and a team of dedicated professionals, we’re here to support you at every step of your immigration journey, including securing your EB-2 NIW visa profile. Let us help you unlock global opportunities with confidence and ease.' %}</p>
+                            </div>
+                        </div><!-- section title end -->
+                    </div>
+                </div><!-- row end -->
+
+            </div>
+        </section>
+        <!--features-section-->
+
+        <!--cat-section-->
+        <section
+            class="cmt-row cat-section cmt-bgcolor-darkgrey bg-img2 cmt-bg cmt-bgimage-yes cmt-bg-pattern clearfix">
+            <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section title -->
+                        <div class="section-title title-style-center_text">
+                            <div class="title-header">
+                                <h5 style="text-decoration: underline;
+text-decoration-thickness: 3px;
+text-decoration-color: #cb6915;">{% trans 'what we do' %}</h5>
+                                <h2 class="title">{% trans 'We Provide Experts Create Great' %}<br> {% trans 'Value for' %} <strong>Immigration
+                                        & Visa </strong></h2>
+                            </div>
+                        </div><!-- section title end -->
+                    </div>
+                </div><!-- row end -->
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="featuredbox-number">
+                            <div class="row slick_slider"
+                                data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "arrows":false, "autoplay":true, "infinite":false, "responsive": [{"breakpoint":991,"settings":{"slidesToShow": 3}}, {"breakpoint":678,"settings":{"slidesToShow": 2}}, {"breakpoint":460,"settings":{"slidesToShow": 1}}]}'>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box style1 icon-align-top-content bor_rad_5">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                <i class="flaticon-boarding-pass-2"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5>{% trans 'Visit visa' %}</h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans 'A visit visa, also commonly referred to as a tourist visa or
+                                                    visitor visa or visiting friends and family.' %} </p>
+                                            </div>
+                                            <div class="cmt-di_links">
+                                                <a href="#" class="di_link">
+                                                    <i class="ti ti-angle-right"></i>
+                                                </a>
+                                                <span class="di_num">
+                                                    <i class="cmt-num ti-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box style1 icon-align-top-content bor_rad_5">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                <i class="flaticon-passport-6"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5>{% trans 'Uk And italy work permit' %}</h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans 'Here is some general information about work permits in the UK and
+                                                    Italy' %}</p>
+                                            </div>
+                                            <div class="cmt-di_links">
+                                                <a href="#" class="di_link">
+                                                    <i class="ti ti-angle-right"></i>
+                                                </a>
+                                                <span class="di_num">
+                                                    <i class="cmt-num ti-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box style1 icon-align-top-content bor_rad_5">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                <i class="flaticon-passport-14"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5>{% trans 'PR Services' %}</h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans 'Here are some common PR services.' %}</p>
+                                            </div>
+                                            <div class="cmt-di_links">
+                                                <a href="#" class="di_link">
+                                                    <i class="ti ti-angle-right"></i>
+                                                </a>
+                                                <span class="di_num">
+                                                    <i class="cmt-num ti-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box style1 icon-align-top-content bor_rad_5">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                <i class="flaticon-visa-1"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5>{% trans 'EB-2 NIW' %}</h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans 'Empowering professionals for enhanced career prospects and global opportunities.' %}</p>
+                                            </div>
+                                            <div class="cmt-di_links">
+                                                <a href="#" class="di_link">
+                                                    <i class="ti ti-angle-right"></i>
+                                                </a>
+                                                <span class="di_num">
+                                                    <i class="cmt-num ti-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-35 mb_20 res-991-mt-20">
+                            <h6><span class="font-weight-normal">{% trans "Don’t Hesitate, Contact us for Better Help and Services." %}</span> </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--cat-section-->
+        <!--testimonial-section-->
+        <section class="cmt-row testimonial-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-xs-12">
+                        <div class="pt-15 res-991-pt-0">
+                            <!-- section title -->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h5>{% trans 'ABOUT' %} Immigration Consultants</h5>
+                                    <h2 class="title">Why can you <strong>trust us?</strong></h2>
+                                </div>
+                            </div><!-- section title end -->
+                            <p>{% trans 'The Most Eminent Visas and Immigration Consultant service provider.' %}</p>
+                            <div class="featuredbox-number">
+                                <!--featured-icon-box-->
+                                <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
+                                    <div class="featured-icon">
+                                        <div
+                                            class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-skincolor cmt-icon_element-size-xs cmt-icon_element-style-rounded">
+                                            <i class="cmt-num ti-info"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h5>{% trans 'PROFESSIONALISM' %} </h5>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <p>{% trans "We have highly trained immigration counselors who will handle your cases with total professionalism, always ready to attend and solve your questions." %}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- featured-icon-box end-->
+                                <!--featured-icon-box-->
+                                <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
+                                    <div class="featured-icon">
+                                        <div
+                                            class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-skincolor cmt-icon_element-size-xs cmt-icon_element-style-rounded">
+                                            <i class="cmt-num ti-info"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h5>{% trans 'HONESTY' %}</h5>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <p>{% trans "At GlobalImmigrationConsults, we understand the critical nature of the services we offer. That's why our team is dedicated to providing honest and transparent guidance throughout your immigration journey." %} </p>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-icon-box end-->
+                                <!--featured-icon-box-->
+                                <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
+                                    <div class="featured-icon">
+                                        <div
+                                            class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-skincolor cmt-icon_element-size-xs cmt-icon_element-style-rounded">
+                                            <i class="cmt-num ti-info"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h5>{% trans 'QUALITY IN THE SERVICE' %}</h5>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <p>{% trans 'At GlobalImmigrationConsults, we stand out because of our genuine passion for helping others. Providing exceptional service is our purpose, and it reflects in the superior quality of our work.' %} </p>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-icon-box end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="testimonials-nav z-index-2" style="opacity:0;">
+                            <div class="testimonial-nav_item">
+                                <div class="nav_item">
+                                    <img class="img-fluid" src="images/testimonial/nav-04.png"
+                                        alt="testimonial-nav_item">
+                                </div>
+                            </div>
+                            <div class="testimonial-nav_item">
+                                <div class="nav_item">
+                                    <img class="img-fluid" src="images/testimonial/nav-02.png"
+                                        alt="testimonial-nav_item">
+                                </div>
+                            </div>
+                            <div class="testimonial-nav_item">
+                                <div class="nav_item">
+                                    <img class="img-fluid" src="images/testimonial/nav-03.png"
+                                        alt="testimonial-nav_item">
+                                </div>
+                            </div>
+                            <div class="testimonial-nav_item">
+                                <div class="nav_item">
+                                    <img class="img-fluid" src="images/testimonial/nav-01.png"
+                                        alt="testimonial-nav_item">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="cmt-col-bgcolor-yes cmt-bgcolor-skincolor cmt-col-bgimage-yes cmt-bg col-bg-img-one cmt-right-span cmt-bg-pattern spacing-1">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer">
+                                <div class="cmt-col-wrapper-bg-layer-inner"></div>
+                            </div>
+                            <div class="layer-content">
+                                <div class="testimonials-info">
+                                    <!-- testimonials -->
+                                    <div class="testimonials">
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img">
+                                                <img class="img-fluid" src="{% static 'assets/images/testimonial/01.jpg' %}"
+                                                    alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <blockquote class="testimonial-text">{% trans "I am incredibly grateful to GlobalImmigrationConsults for turning what seemed like a daunting immigration process into a seamless experience. The team guided us through every step with precision and care, ensuring no mistakes or delays. My family and I felt fully confident in their expertise, and the outcomes were better than we could have hoped for. Thank you for making this life-changing journey so smooth and stress-free!" %}</blockquote>
+                                            <div class="testimonial-bottom">
+                                                <div class="testimonial-caption cmt-textcolor-white">
+                                                    <h5>{% trans 'Sarah Williams' %}</h5>
+                                                </div>
+                                                <div class="star-ratings">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- testimonials end -->
+                                    <!-- testimonials -->
+                                    <div class="testimonials">
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img">
+                                                <img class="img-fluid" src="{% static 'assets/images/testimonial/01.jpg' %}"
+                                                    alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <blockquote class="testimonial-text">{% trans "We were absolutely thrilled with our experience at GlobalImmigrationConsults. The team is professional and genuinely cares about their clients. We felt completely reassured knowing we were in capable hands. We would definitely recommend their services to anyone in need of immigration assistance!" %}</blockquote>
+                                            <div class="testimonial-bottom">
+                                                <div class="testimonial-caption cmt-textcolor-white">
+                                                    <h5>{% trans 'Emily Johnson' %}</h5>
+                                                </div>
+                                                <div class="star-ratings">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- testimonials end -->
+                                    <!-- testimonials -->
+                                    <div class="testimonials">
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img">
+                                                <img class="img-fluid" src="{% static 'assets/images/testimonial/01.jpg' %}"
+                                                    alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <blockquote class="testimonial-text">{% trans "My experience with GlobalImmigrationConsults was exceptional. I highly recommend their services to anyone facing immigration challenges. The team is incredibly knowledgeable, attentive, and truly outstanding in their approach. The consultants were incredibly helpful throughout the entire process, making the journey much smoother than expected." %}</blockquote>
+                                            <div class="testimonial-bottom">
+                                                <div class="testimonial-caption cmt-textcolor-white">
+                                                    <h5>{% trans 'Michael Lee' %}</h5>
+                                                </div>
+                                                <div class="star-ratings">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- testimonials end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--testimonial-section end-->
+
+        <section
+            class="cmt-row introduction-section cmt-bgcolor-grey cmt-bg cmt-bgimage-yes bg-img7 cmt-bg-pattern mt_60 res-991-mt-0 clearfix">
+            <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-11 mx-auto col-xs-12">
+
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="pt-60">
+                            <!-- section title -->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h5>{% trans 'Our Services' %} </h5>
+                                    <h2 class="title">{% trans 'Immigration &' %} <strong> {% trans 'EB-2 NIW services' %}</strong></h2>
+                                </div>
+                            </div><!-- section title end -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content style3">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">
+                                                <i class="flaticon-certificate"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5><a href="#">{% trans 'PR process' %}</a></h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans "An application for PR will take anywhere from 6 months to 18 months to process" %}</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content style3">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">
+                                                <i class="flaticon-contract"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5><a href="#">{% trans "Work permit" %}</a></h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans "Assist clients with completing documentation and acquiring all permits needed to facilitate their move to another country" %}</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content style3">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">
+                                                <i class="flaticon-book-1"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5><a href="#">{% trans "EB-2 NIW" %}</a></h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans "Empowering professionals for enhanced career prospects and global opportunities." %}</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content style3">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">
+                                                <i class="flaticon-policy"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5><a href="#">{% trans "Visit visa" %}</a></h5>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p>{% trans "Is similar to a tourist visa in that it allows travellers to enter another country for tourism purposes." %}</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- featured-icon-box end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row end -->
+            </div>
+        </section>
+    </div>
+</div>
+<!--site-main end-->
+<!--back-to-top start-->
+<a id="totop" href="#top">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!--back-to-top end-->
+
+{% endblock %}

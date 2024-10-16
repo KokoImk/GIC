@@ -1,0 +1,200 @@
+{% extends 'app/assets/admin.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %} {% trans "Contact Us" %} {% endblock title %}
+
+{% block content %}
+<div class="page">
+
+
+        <!--header start-->
+          <!--header start-->
+  <header id="masthead" class="header cmt-header-style-01">
+
+        <!-- page-title -->
+        <div class="cmt-page-title-row contact">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">{% trans 'Contact Us' %}</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="/">{% trans 'Home' %}</a>
+                                </span>
+                                <span>{% trans 'Contact Us' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--google_map-->
+        <div id="google_map" class="google_map res-991-mt-30">
+            <div class="map_container" style="height:250px; width:100%;">
+                <div>
+                    {% include 'app/assets/messages.html' %}
+                </div>
+            </div>
+        </div>
+
+
+        <!--- conatact-section -->
+        <section class="cmt-row conatact-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cmt-col-bgcolor-yes cmt-bg cmt-bgcolor-white z-index-2 spacing-7 box-shadow">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="cmt-bgcolor-darkgrey pt-30 pb-30 pl-30 pr-30">
+                                        <div class="mb-20">
+                                            <h4>{% trans "Contact Line" %}</h4>
+                                            <p>+1(510) 546 8996</p>
+                                        </div>
+                                        <h4>{% trans "Our Mail" %}</h4>
+                                        <div class="cmt-textcolor-white">Support: <a href="mailto:canadianmigrant89@gmail.com">canadianmigrant89@gmail.com</a></div>
+
+                                    </div>
+                                    <div class="cmt-bgcolor-skincolor pt-30 pb-25 pl-30 pr-30">
+                                        <h5 class="font-weight-normal">We will get back to you within 24 hours, or call us everyday , <br> 10:00 AM - 06:00 PM</h5>
+                                        <div class="d-flex align-items-center pt-10">
+                                            <div class="cmt-icon cmt-icon_element-border cmt-icon_element-color-white cmt-icon_element-size-xs cmt-icon_element-style-rounded mb-10 mr-15">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <h4><a href="tel:+97143298681">+97143298681 </a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7">
+                                    <div class="pl-30 res-991-pl-0 res-767-mt-30">
+                                        <!-- section title -->
+                                        <div class="section-title with-desc clearfix">
+                                            <div class="title-header">
+                                                <h5>{% trans "why choose us" %}</h5>
+                                                <h2 class="title">{% trans "Get In" %} <strong>{% trans "Touch?" %}</strong></h2>
+                                            </div>
+                                        </div><!-- section title end -->
+                                        <form class="contact_form wrap-form pt-15 clearfix" method="post" action="#" novalidate="novalidate">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        <span class="text-input"><input name="name" type="text" value="" placeholder="Your Name" required="required"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        <span class="text-input"><input name="email" type="text" value="" placeholder="Your Email" required="required"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        <span class="text-input"><input name="phone_number" type="text" value="" placeholder="Phone Number" required="required"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label>
+                                                        <span class="text-input"><input name="subject" type="text" value="" placeholder="Subject" required="required"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label>
+                                                <span class="text-input"><textarea name="message" rows="5" placeholder="Message" required="required"></textarea></span>
+                                            </label>
+
+
+                                            <button class="submit cmt-btn cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100" type="submit" name="submit">{% trans "Submit Request !" %}</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                </div>-->
+<!--                &lt;!&ndash; row &ndash;&gt;-->
+<!--                <div class="row pt-30">-->
+<!--                    <div class="col-md-4">-->
+<!--                        &lt;!&ndash; featured-imagebox &ndash;&gt;-->
+<!--                        <div class="featured-icon-box icon-align-top-content style8 box-shadow">-->
+<!--                            <div class="featured-icon">-->
+<!--                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">-->
+<!--                                    <i class="fa fa-map-marker"></i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="featured-content pl-10 pr-10">-->
+<!--                                <div class="featured-title">-->
+<!--                                    <h5>Dubai Office</h5>-->
+<!--                                </div>-->
+<!--                                <div class="featured-desc">-->
+<!--                                    <p>Email: info@ffauae.com-->
+<!--                                        <br>Address: M01 A1 ,Gulf Towers ,Mazzanine Floor , Our Metha,Dubai<br>-->
+<!--                                        Phone: <a href="tel:+97143298681">+97143298681 </a><br>Hours: Mon-Fri: 8am – 7pm</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; featured-imagebox end&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        &lt;!&ndash; featured-imagebox &ndash;&gt;-->
+<!--                        <div class="featured-icon-box icon-align-top-content style8 box-shadow">-->
+<!--                            <div class="featured-icon">-->
+<!--                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">-->
+<!--                                    <i class="fa fa-map-marker"></i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="featured-content pl-10 pr-10">-->
+<!--                                <div class="featured-title">-->
+<!--                                    <h5>India Office</h5>-->
+<!--                                </div>-->
+<!--                                <div class="featured-desc">-->
+<!--                                    <p>Email: admin@ffauae.com<br>Address: Parwana road old<br> brij Puri Krishna nagar delhi 110051<br>Phone: <a href="tel:9971738584">9971738584 </a><br>Hours: Mon-Fri: 8am – 7pm</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; featured-imagebox end&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        &lt;!&ndash; featured-imagebox &ndash;&gt;-->
+<!--                        <div class="featured-icon-box icon-align-top-content style8 box-shadow">-->
+<!--                            <div class="featured-icon">-->
+<!--                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-md">-->
+<!--                                    <i class="fa fa-map-marker"></i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="featured-content pl-10 pr-10">-->
+<!--                                <div class="featured-title">-->
+<!--                                    <h5>India Office</h5>-->
+<!--                                </div>-->
+<!--                                <div class="featured-desc">-->
+<!--                                    <p>Email: sales@ffauae.com<br>Address: Alappuzha ,Kerala<br>Phone:<a href="tel:+919961038578">+919961038578 </a><br>Hours: Mon-Fri: 8am – 7pm</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; featured-imagebox end&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>&lt;!&ndash; row end &ndash;&gt;-->
+            </div>
+        </section>
+        <!-- conatact-section end -->
+
+    </div><!--site-main end-->
+
+
+    <!--back-to-top start-->
+    <a id="totop" href="#top" style="display: none;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
+
+</div>
+
+{% endblock %}

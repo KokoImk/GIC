@@ -1,0 +1,121 @@
+{% extends 'app/assets/admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans "Assessment Form" %} {% endblock title %}
+
+<style>
+    form input[type="image"]{
+        padding:10px;
+        width:100%;
+    }
+</style>
+
+{% block content %}
+<div class="page">
+        <!--header start-->
+          <!--header start-->
+  <header id="masthead" class="header cmt-header-style-01">
+
+        <!-- page-title -->
+        <div class="cmt-page-title-row contact">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">{% trans 'Sponsorship Payment Proof' %}</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="/">{% trans 'Home' %}</a>
+                                </span>
+                                <span>{% trans 'Sponsorship Payment Proof' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--google_map-->
+        <div id="google_map" class="google_map res-991-mt-30">
+            <div class="map_container" style="height:200px; width:100%;">
+                <div>
+                    {% include 'app/assets/messages.html' %}
+                </div>
+            </div>
+        </div>
+
+
+        <!--- conatact-section -->
+        <section class="cmt-row conatact-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cmt-col-bgcolor-yes cmt-bg cmt-bgcolor-white z-index-2 spacing-7 box-shadow">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="pt-30 pb-30 pl-30 pr-30" style="background: url('{% static 'assets/images/single-img-12.jpg' %}'); height:auto; width:100%; background-size:cover; background-repeat:no-repeat;">
+                                        <div class="mb-20">
+                                            <h4 style="color:#000; font-weight:bold;">{% trans "Sponsorship Payment Proof" %}</h4>
+                                          </div>
+
+                                    </div>
+                                    <div class="mt-3">
+                                        <a href="{% url 'app:payment_proof' %}" class="submit cmt-btn text-center cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100">{% trans "Upload Payment Proof " %}</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-md-7">
+                                    <div class="pl-30 res-991-pl-0 res-767-mt-30">
+                                        <!-- section title -->
+                                        <div class="section-title with-desc clearfix">
+                                            <div class="title-header">
+                                                <h5>{% trans "Info needed" %}</h5>
+                                                <h2 class="title">{% trans "Upload your" %} <strong>{% trans "Sponsorship Payment Proof" %}</strong></h2>
+                                            </div>
+                                        </div><!-- section title end -->
+                                        <form class="contact_form wrap-form pt-15 clearfix" method="post" novalidate="novalidate"  enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 mb-3">
+                                                    <label>
+                                                        {{ form.sponsorship_payment_image.label_tag }}
+                                                        <span class="text-input pt-2">{{ form.sponsorship_payment_image }}</span>
+                                                        <small>{% trans "submit the reciept of your payment." %}</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+
+                                            <button class="submit cmt-btn cmt-btn-size-lg cmt-btn-shape-rounded cmt-btn-style-border cmt-btn-color-dark w-100" type="submit" name="submit">{% trans "Upload" %}</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- assessment-section end -->
+
+    </div><!--site-main end-->
+
+
+    <!--back-to-top start-->
+    <a id="totop" href="#top" style="display: none;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
+
+</div>
+
+{% endblock %}

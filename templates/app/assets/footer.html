@@ -1,0 +1,128 @@
+{% load static %}
+{% load i18n %}
+<!--footer start-->
+<footer class="footer cmt-bgcolor-darkgrey widget-footer clearfix">
+
+    <div class="first-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
+                    <div class="widget widget_text mr-25 clearfix">
+                        <h3 class="widget-title">{% trans 'About Us' %}</h3>
+                        <div class="textwidget widget-text" style="text-align: justify;">
+                            <p>{% trans 'At GlobalImmigrationConsults, we distinguish ourselves among immigration consultants in the UAE through our steadfast dedication to delivering exceptional services. As a reliable immigration services provider, we specialize in PR support, work permits, study visas, visit visas, and offer assistance with EB-2 NIW visa profiles.'%}
+                            </p>
+                        </div>
+                        <div class="cmt-horizontal_sep mt-25 mb-30"></div>
+                        <div class="social-icons circle">
+<!--                            <ul class="list-inline cmt-textcolor-skincolor">-->
+<!--                                <li class="social-facebook"><a class="tooltip-top" target="_blank" href="#"-->
+<!--                                        data-tooltip="Facebook"><i class="ti ti-facebook"></i></a></li>-->
+<!--                                <li class="social-twitter"><a class="tooltip-top" target="_blank" href="#"-->
+<!--                                        data-tooltip="twitter"><i class="ti ti-twitter-alt"></i></a></li>-->
+<!--                                <li class="social-instagram"><a class="tooltip-top" target="_blank" href="#"-->
+<!--                                        data-tooltip="Google"><i class="ti ti-google"></i></a></li>-->
+<!--                                <li class="social-twitter"><a class="tooltip-top" target="_blank" href="#"-->
+<!--                                        data-tooltip="Linkedin"><i class="ti ti-linkedin"></i></a></li>-->
+<!--                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
+                    <div class="widget widget-recent-post clearfix">
+                        <h3 class="widget-title">{% trans 'Immigration and PR Services' %}</h3>
+                        <ul id="menu-footer-quick-links">
+                            <li><a>{% trans 'Canadian PR' %}</a></li>
+                            <li><a>{% trans 'Australia PR' %}</a></li>
+                            <li><a>{% trans 'New Zealand PR' %}</a></li>
+                            <li><a>{% trans 'United Kingdom Work Permit' %}</a></li>
+                            <li><a>{% trans 'Italy Work Permit' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
+                    <div class="widget contact_map clearfix">
+                        <h3 class="widget-title">{% trans 'Quick contact' %}</h3>
+                        <div class="footer_map mb-20">
+                            <h2 style="font-weight:bolder; color:#ffa500;">GIC</h2>
+                        </div>
+                        <ul class="widget_contact_wrapper">
+                            <li><i class="cmt-textcolor-skincolor fa fa-map-marker"></i><a href="tel:+971564066883">
+                                    +1(510) 546 8996</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="widget-area col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <aside class="widget widget-text">
+                        <!--featured-icon-box-->
+                        <div class="featured-icon-box icon-align-before-content">
+                            <div class="featured-icon">
+                                <div
+                                    class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-darkgrey cmt-icon_element-size-sm cmt-icon_element-style-square">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h5><a href="mailto:canadianmigrant89@gmail.com"
+                                            style="text-transform: lowercase;">canadianmigrant89@gmail.com</a></h5>
+                                </div>
+                                <div class="featured-desc">
+                                    <p>{% trans 'Drop Us a Line' %}</p>
+                                </div>
+                            </div>
+                        </div><!-- featured-icon-box end-->
+                    </aside>
+                </div>
+                <div class="widget-area col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <aside class="widget widget-text cmt-bgcolor-skincolor">
+                        <!--featured-icon-box-->
+                        <div class="featured-icon-box icon-align-before-content">
+                            <div class="featured-icon">
+                                <div
+                                    class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-darkgrey cmt-icon_element-size-sm cmt-icon_element-style-square">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h5><a href="tel:+97143298681">+1(510) 546 8996</a></h5>
+                                </div>
+                                <div class="featured-desc">
+                                    <p>{% trans 'Call Us Now!' %}</p>
+                                </div>
+                            </div>
+                        </div><!-- featured-icon-box end-->
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        <div id="menu-footer-menu">
+                            <ul class="footer-nav-menu text-center">
+                                <li><a href="/">{% trans 'Home' %}</a></li>
+                                <li><a href="#">{% trans 'About' %}</a></li>
+                                <li><a href="{% url 'app:more_countries' %}">{% trans 'Blog' %}</a></li>
+                                <li><a href="{% url 'app:contact' %}">{% trans 'Contact us' %}</a></li>
+                            </ul>
+                        </div>
+                        <span>Copyright © GlobalImmigrationconsults &nbsp All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer end-->

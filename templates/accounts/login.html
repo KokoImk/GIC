@@ -1,0 +1,62 @@
+{% extends 'app/elements/base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans "Login" %} {% endblock title %}
+
+{% block content %}
+    <div class="my-3 text-center">
+        {% include 'app/elements/messages.html' %}
+    </div>
+    <main class="">
+        <div class="card-section container">
+            <div class="row-section">
+                <div class="">
+                    <div class="card__section--two">
+                        <div class="mt-3 mb-5">
+                            <h4 class="fw-bold">{% trans "LOGIN" %}</h4>
+                            <small>{% trans "Don't have an account?" %} <a href="{% url 'core:register' %}">{% trans "Register" %}</a></small>
+                        </div>
+                    </div>
+
+                     <form action="{% url 'core:login' %}" method="POST"  class="needs-validation pb-3" novalidate>
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12">
+                            <label for="validationCustom03" class="form-label">{% trans "Username" %}</label>
+                            <input type="text" class="form-control" name="username" id="validationCustom03"  placeholder="your username..." required>
+                            <div class="invalid-feedback">
+                                {% trans "input a valid username!" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12">
+                            <label for="validationCustom04" class="form-label">{% trans "Password" %}</label>
+                            <input type="password" class="form-control" name="password" id="validationCustom04" placeholder="*****" required>
+                            <div class="valid-feedback">
+                                {% trans "looks good!" %}
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 my-4">
+                        <button class="btn buttons w-100" type="submit">{% trans "Login" %}</button>
+                    </div>
+                </form>
+                </div>
+                <div class="">
+                    <div class="card__section--one">
+                        <img src="{% static './elements/images/9387098.jpg' %}" alt="" style="object-fit:contain;">
+                    </div>`
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+{% endblock %}

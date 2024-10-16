@@ -1,0 +1,148 @@
+{% extends 'app/assets/admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans "About Us" %} {% endblock title %}
+
+{% block content %}
+<div class="page">
+
+
+        <!--header start-->
+          <!--header start-->
+  <header id="masthead" class="header cmt-header-style-01">
+
+        <!-- page-title -->
+        <div class="cmt-page-title-row about">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">About Us</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="index.html">Home</a>
+                                </span>
+                                <span>About Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end -->
+
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--google_map-->
+        <div id="google_map" class="google_map res-991-mt-30">
+            <div class="map_container" style="height:150px; width:100%;">
+            </div>
+        </div>
+
+
+        <!--about-section-->
+        <section class="cmt-row about_2-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-5 mr-lg-auto ml-lg-0 offset-3">
+                        <div class="cmt-bg cmt-col-bgcolor-yes cmt-bgcolor-grey pt-25 pb-25 pl-25 pr-25 ml-80 res-991-ml-0">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                            <div class="layer-content">
+                                <div class="cmt-bgcolor-white pt-60 pb-50 res-991-pt-50 res-991-pb-40">
+                                    <div class="col-lg-12">
+                                  <div class="ttm_single_image-wrapper ml_110 mr_200 res-575-mr_140">
+                                        <img class="img-fluid" src="images/single-img-08.jpg" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+                        <div class="pt-15 pr-30 mb_30 res-991-pr-0 res-991-pt-30">
+                            <!-- section title -->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h5>{% trans 'who we are' %}</h5>
+                                    <h2 class="title">{% trans 'Welcome to' %} <strong> GI GLOBAL IMMIGRATION</strong></h2>
+                                </div>
+                            </div><!-- section title end -->
+                            <p> {% trans 'Welcome to GlobalImmigrationConsults – your trusted partner for worldwide immigration and visa services. We specialize in providing expert guidance and tailored solutions for countries like USA, Canada, Australia, Italy, and beyond. With a focus on excellence and a team of dedicated professionals, we’re here to support you at every step of your immigration journey, including securing your EB-2 NIW visa profile. Let us help you unlock global opportunities with confidence and ease.' %}</p>
+                            <div class="pt-10 pr-15 res-991-pr-0">
+                                <!-- featured-icon-box -->
+                                <div class="featured-icon-box icon-align-before-content style2">
+                                    <div class="featured-icon">
+                                        <div class="cmt-icon cmt-icon_element-border cmt-icon_element-color-skincolor cmt-icon_element-size-lg cmt-icon_element-style-square">
+                                            <i class="flaticon-policy"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h5><a href="#">{% trans 'Our Mission' %}</a></h5>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <p style="text-align: justify;">{% trans "Global Immigration Consults is dedicated to providing comprehensive immigration services that simplify the visa application process for our clients. Our mission is to offer expert guidance, personalized support, and timely solutions tailored to each individual’s unique circumstances. We aim to foster a supportive environment where clients feel informed and empowered throughout their immigration journey. Through our commitment to excellence, integrity, and client satisfaction, we strive to build lasting relationships and facilitate successful transitions into new opportunities and communities." %}</p>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-icon-box end -->
+                                <!-- featured-icon-box -->
+                               <!-- featured-icon-box end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12">
+                    <div class="featured-icon-box icon-align-before-content style2">
+                                    <div class="featured-icon">
+                                        <div class="cmt-icon cmt-icon_element-border cmt-icon_element-color-skincolor cmt-icon_element-size-lg cmt-icon_element-style-square">
+                                            <i class="flaticon-contract"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h5><a href="#">{% trans "Our Vision" %}</a></h5>
+                                        </div>
+                                        <div class="featured-desc" >
+                                            <p style="text-align: justify;">{% trans "At Global Immigration Consults, our vision is to empower individuals and families to navigate the complexities of immigration with confidence and clarity. We strive to be the leading provider of innovative immigration solutions, ensuring a seamless and positive experience for every client. Our commitment is to uphold integrity, promote cultural diversity, and facilitate global mobility, enabling our clients to build brighter futures in new communities around the world." %}</div>
+                                    </div>
+                                </div>
+                             <div class="section-title">
+                                <div class="title-header">
+                                    <h4>{% trans "Our Expertise" %}</h4>
+                                </div>
+                            </div><!-- section title end -->
+                            <p>{% trans "Global Immigration Consults specializes in providing tailored immigration solutions backed by extensive knowledge and experience in the field. Our team of seasoned professionals is well-versed in the intricacies of visa regulations, application processes, and immigration policies across various countries. We pride ourselves on our deep understanding of diverse immigration pathways, including work, study, family reunification, and permanent residency options. Our commitment to staying updated on legal developments and industry trends ensures that we deliver accurate, reliable, and effective guidance to our clients. By combining our expertise with a client-centered approach, we empower individuals and families to achieve their immigration goals with confidence and ease." %}</p>
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h4>{% trans "Our Commitment" %}</h4>
+                                </div>
+                            </div><!-- section title end -->
+                            <p>{% trans "Global Immigration Consults specializes in providing tailored immigration solutions backed by extensive knowledge and experience in the field. Our team of seasoned professionals is well-versed in the intricacies of visa regulations, application processes, and immigration policies across various countries. We pride ourselves on our deep understanding of diverse immigration pathways, including work, study, family reunification, and permanent residency options. Our commitment to staying updated on legal developments and industry trends ensures that we deliver accurate, reliable, and effective guidance to our clients. By combining our expertise with a client-centered approach, we empower individuals and families to achieve their immigration goals with confidence and ease." %}</p>
+
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h4>{% trans "Our Services" %}</h4>
+                                </div>
+                            </div><!-- section title end -->
+                            <p>{% trans "With a commitment to excellence and client satisfaction, we empower our clients to achieve their immigration goals and build brighter futures in new communities." %}</p>
+                </div><!-- row end -->
+            </div>
+        </section>
+        <!--about-section end-->
+
+    </div><!--site-main end-->
+
+
+    <!--back-to-top start-->
+    <a id="totop" href="#top" style="display: none;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
+
+</div>
+
+{% endblock %}
